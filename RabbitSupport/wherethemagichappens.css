@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding: 0; width:100%; font-family: 'Open Sans', sans-serif; font-size:14pt; text-align:left;}
+body { background-color:#CCC99F;}
+a { color: #099000;}
+a:visited { color: #F18202}
+h1 { font-family: 'Open Sans', sans-serif; font-size: 36pt; font-weight:bold; font-style:italic; text-align:center;}
+#main-header { position: relative; margin:auto; height: 4em; width: 85%;display: flex; overflow: hidden; }
+#actual-content{ margin: auto; width:85%; background: rgb(238,238,238) none repeat scroll 0 0; box-shadow: 2px 2px 3px rgba(33,33,33,.7); border-radius:3px;}
+
+.logo {
+  width: 10em;
+  height:10em;
+  margin-top:-0.6em;
+}
+
+#description { padding: 20px 10px; }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul { 
+  width: 24em;
+  }
+
+header ul, header li{
+  list-style:none;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing:border-box;
+  border-radius: 3px;
+} 
+header li { 
+  background: #343436;
+	height: 3rem;
+	display:block;
+  font-size: 1rem;
+  text-shadow: none;
+  line-height: 1.2;
+  display: inline-block;
+  border: 0;
+  padding: 10px 16px;
+  margin: 0.8em 0.7em 0 0;
+  position: relative;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+header li:hover, header li:focus {
+  background: #4d4d50;
+  transition: background-color 0.3s ease 0s,
+  border-color 0s ease 0s, all 0.3s ease 0s;
+  border-bottom: 3px solid;
+}
+	
+header li a, header li a:visited {
+	height:3rem;
+  display: flex;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+	justify-content:center;
+}
+
+header li.active, header li.active:hover, header li.active:focus { border: 2px solid #4d4d50; border-bottom: 3px solid #fff; background-image:url("images/bunny_ears2.png"); background-repeat:no-repeat; background-position: 23px -2px; background-size: 40px; border-radius: 3px;}
+
+#description {
+  width: auto;
+}
+
+.DescText{
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+ul#listy {
+  padding: 2em;
+  list-style: none;
+  border: #cccccc solid 1px;
+  background:#e6e6e6;
+}
+
+ul#listy {
+   width: 15em;
+}
+
+#listy li {
+  padding-left: 1.3em;
+}
+
+#listy li:before {
+  content: "\f00c"; 
+  display:inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+.home_r {
+  float:right;
+  width: 9em;
+  height: 9em;
+}
